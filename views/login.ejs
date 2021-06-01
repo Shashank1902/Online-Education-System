@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Login as</h1>
+
+        <div class="sel">
+            <form method="POST">
+                <input type="radio" name="admin" id="admin" checked>
+                <label for="admin">Admin</label>
+
+                <input type="radio" name="teacher" id="teacher">
+                <label for="teacher">Teacher</label>
+
+                <input type="radio" name="student" id="students">
+                <label for="students">Students</label>
+        </div>
+        <div class="inputbox">
+            <input type="text" name="username" required>
+            <label for="">Username</label>
+        </div>
+        <div class="inputbox">
+            <input type="password" name="password" required>
+            <label for="">Password</label>
+
+        </div>
+
+        <div class="error-msg">
+
+            <% if(msg === "off") { %>
+            <span>Please select your role.</span>
+            <% } %>
+
+            <% if(msg === "id") { %>
+            <span>User not found! Try again.</span>
+            <% } %>
+
+            <% if(msg === "password") { %>
+            <span>Incorrect password! Try again.</span>
+            <% } %>
+
+        </div>
+
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/admin" class="admin-ava">
+            <img src="adminlogo.jpg" alt="logo">
+            <p>Admin</p>
+        </a>
+
+        <a href="/" class="logout">
+            <p>Logout</p>
+            <img src="logout.png" alt="logo">
+        </a>
+
+    </div>
+
+    <% if(msg === "success") { %>
+    <h1>Successfully added!</h1>
+    <% } %>
+    <% if(msg === "fail") { %>
+    <h1>Failed to added!</h1>
+    <% } %>
+
+    <h1>Add Class Details</h1>
+    <section class="info">
+        <div class="form">
+            <form action="/addclass" method="post">
+                <label for="name">Enroll Class :</label>
+                <input type="text" name="class" id="name" placeholder="Enter Class">
+                <label for="sub1">Subject 1 :</label>
+                <input type="text" name="sub1" id="sub1">
+                <label for="sub2">Subject 2 :</label>
+                <input type="text" name="sub2" id="sub2">
+                <label for="sub3">Subject 3 :</label>
+                <input type="text" name="sub3" id="sub3">
+                <label for="sub4">Subject 4 :</label>
+                <input type="text" name="sub4" id="sub4">
+                <label for="sub5">Subject 5 :</label>
+                <input type="text" name="sub5" id="sub5">
+                
+                <button type="submit" class="btn">Add Class</button>
+               
+            </form>
+
+    </section>
+    </div>
+</body>
+
+</html>

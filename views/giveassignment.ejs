@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.css">
+    <title>Give Assignment</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/teacher" class="admin-ava">
+            <img src="adminlogo.jpg" alt="logo">
+            <p>Home</p>
+        </a>
+
+        <a href="/" class="logout">
+            <p>Logout</p>
+            <img src="logout.png" alt="logo">
+        </a>
+
+    </div>
+
+    <form class="form" action="/giveassignment" method="post" enctype="multipart/form-data">
+        <div class="name-file">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="">
+        </div>
+        <div class="choose-file">
+            <label for="file">Choose file:</label>
+            <br>
+            <input type="file" name="myfile" id="">
+        </div>
+        <br>
+        <button type="submit" disabled>Submit</button>
+    </form>
+
+</body>
+
+</html>
